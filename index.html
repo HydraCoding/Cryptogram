@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <!--                                                  Google fonts                                                                                          -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Grandstander:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--                                              Google fonts end-->
+    <title>Cryptogram</title>
+  </head>
+  <body id="body" onload="showPosts(), checkResize(), checkRelodeSize()">
+    <head>
+      <div class="fixed_head" id="fixed_head">
+        <div class="headline"><p class="headline_text">Cryptogram</p></div>
+        <div class="search">
+          <form action="">
+            <input requierd pattern""" class="inp" id="inp" type="text"
+            placeholder="Suchen" />
+          </form>
+        </div>
+        <div class="icons">
+          <div id="uebung" class="iconWindow">
+            <p>Dies ist nur eine Übungsaufgabe</p>
+          </div>
+          <img src="img/home.png" class="home" />
+          <img src="img/send.png" class="send" />
+          <img src="img/like.png" class="like" />
+          <img src="img/darkmode.png" onclick="darkmode()" class="compass" />
+          <img
+            src="img/account_profil.png"
+            class="account_profil"
+            onclick="darkmode()"
+          />
+        </div>
+      </div>
+      <div class="fixed_head_darkmode dnone" id="fixed_head_darkmode">
+        <div class="headline">
+          <p class="headline_text_darkmode">Cryptogram</p>
+        </div>
+        <div class="search">
+          <input
+            class="inp"
+            id="inp_darkmode"
+            type="text"
+            placeholder="Suchen"
+          />
+        </div>
+        <div class="icons">
+          <div id="uebung_darkmode" class="iconWindow">
+            <p>Dies ist nur eine Übungsaufgabe</p>
+          </div>
+          <img src="img/home_darkmode.png" class="home" />
+          <img src="img/send_darkmode.png" class="send" />
+          <img src="img/heart_darkmode.png" class="like" />
+          <img
+            src="img/darkmode_darkmode.png"
+            onclick="daymodeEnter()"
+            class="compass"
+          />
+          <img
+            src="img/account_profil_darkmode.png"
+            class="account_profil_darkmode"
+            onclick="darkmode()"
+          />
+        </div>
+      </div>
+    </head>
+
+    <div class="porposal_responsive_resp">
+      <div class="proposalbox"></div>
+    </div>
+
+    <div class="content_right" id="content_right">
+      <div class="main_profil">
+        <div class="overlay">
+          <img src="img/satoshi_nakamoto.jpg" alt="mainpic" class="mainpic" />
+
+          <p class="main_name">crypto-punk</p>
+        </div>
+        <p class="main_option">Wechseln</p>
+      </div>
+
+      <div class="information">
+        <p class="proposals">Vorschläge für dich</p>
+        <p class="see_all">Alles ansehen</p>
+      </div>
+      <div class="porposal_overlay">
+        <div class="profil_pics">
+          <img
+            class="porposal_profilpics"
+            src="img/patrick.jfif"
+            alt="Patrick Tobler"
+          />
+          <img
+            class="porposal_profilpics"
+            src="img/charles.jpg"
+            alt="Charles Hoskinson"
+          />
+          <img
+            class="porposal_profilpics object_corret_ada"
+            src="img/ada_lovelace.png"
+            alt="Ada Lovelace"
+          />
+          <img
+            class="porposal_profilpics object_corret_sophia"
+            src="img/sophia.jpg"
+            alt="Sophia A.I. Robot"
+          />
+          <img class="porposal_profilpics" src="img/cz.jpg" alt="" />
+        </div>
+
+        <div class="profil_names">
+          <p class="names">patrick-tobler</p>
+          <p class="names">charles-hoskinson</p>
+          <p class="names">ada-lovelace</p>
+          <p class="names">sophia-A.I.</p>
+          <p class="names">cz</p>
+        </div>
+
+        <div class="subscribe">
+          <div class="subBox" id="abo0">
+            <p onclick="changeSubs(0)" class="subs">Abonieren</p>
+          </div>
+          <div class="subBox" id="abo1">
+            <p onclick="changeSubs(1)" class="subs">Abonieren</p>
+          </div>
+          <div class="subBox" id="abo2">
+            <p onclick="changeSubs(2)" class="subs">Abonieren</p>
+          </div>
+          <div class="subBox" id="abo3">
+            <p onclick="changeSubs(3)" class="subs">Abonieren</p>
+          </div>
+          <div class="subBox" id="abo4">
+            <p onclick="changeSubs(4)" class="subs">Abonieren</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content_left" id="content_left"></div>
+  </body>
+</html>
